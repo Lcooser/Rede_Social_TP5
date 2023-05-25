@@ -1,0 +1,176 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+.header {
+  background-color: #303f9f;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.header img {
+  height: 30px;
+  margin-right: 10px;
+}
+
+.header img:hover {
+  background-color: rgb(189, 189, 189);
+}
+
+.header .logo {
+  display: flex;
+  align-items: center;
+}
+
+.header .logo h1 {
+  color: #fff;
+  margin-left: 10px;
+}
+
+.header .nav-icons {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.header .nav-icons a {
+  color: #fff;
+  margin-right: 10px;
+}
+
+.header .nav-icons a:hover {
+  color: #f5f5f5;
+}
+
+.header input[type="text"] {
+  border-radius: 20px;
+  border: none;
+  background-color: white;
+  color: black;
+  padding: 10px;
+  width: 200px;
+}
+
+.header button {
+  border-radius: 20px;
+  border: none;
+  background-color: #e91e63;
+  color: white;
+  padding: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.header button:hover {
+  background-color: #c2185b;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 100px 20px 20px 20px;
+}
+
+.publicacoes {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 20px;
+  justify-content: center;
+}
+
+.publicacao {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+}
+
+.publicacao h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.publicacao p {
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+}
+
+.publicacao .acoes {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.publicacao .acoes button {
+  background-color: #3f51b5;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.publicacao .acoes button:hover {
+  background-color: #2c3e50;
+}
+
+.publicacao .acoes span {
+  font-size: 0.8rem;
+  margin-left: 5px;
+}
+
+textarea {
+  height: 100px;
+  width: 80vh;
+}
+
+button {
+  margin-left: 5px;
+}
+
+.style-button {
+  background-color: blue;
+  color: white;
+  border: none;
+  padding: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.style-button:hover {
+  background-color: rgb(189, 189, 189);
+}
+
+@media only screen and (min-width: 768px) {
+  .container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 100px 20px 20px 20px;
+  }
+
+  .publicacoes {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+
+  .publicacao {
+    width: 100%;
+  }
+}
